@@ -1,12 +1,5 @@
-# MetaMask Test Dapp
+# LearnaQuest
 
-This is a simple test dapp for use in MetaMask e2e tests.
+This is a simple learning game aimed to make learning maths and english fun for kids.
 
-Currently hosted [here](https://metamask.github.io/test-dapp/).
-
-## NOTE: Requires Manual Deployment
-After merging or pushing to `master`, please `yarn deploy` in the project root
-directory if any of the following files have changed:
-
-- `contract.js`
-- `index.html`
+Currently hosted [here](https://happy-bardeen-d7be48.netlify.app/).
