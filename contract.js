@@ -37,6 +37,7 @@ const initialize = () => {
   const onboardButton = document.getElementById('connectButton');
   const getAccountsButton = document.getElementById('getAccounts');
   const getAccountsResult = document.getElementById('getAccountsResult');
+  const redirectionLink = document.getElementById('redirectionLink');
   //Created check function to see if the MetaMask extension is installed
   const isMetaMaskInstalled = () => {
     //Have to check the ethereum binding on the window object to see if it's installed
@@ -90,6 +91,7 @@ const initialize = () => {
     const accounts = await ethereum.request({ method: 'eth_accounts' });
     //We take the first address in the array of addresses and display it
     getAccountsResult.innerHTML = accounts[0] || 'Not able to get accounts';
+    redirectionLink.innerHTML = 'https://serene-fermat-ae35b0.netlify.app/';
   });
 }
 
